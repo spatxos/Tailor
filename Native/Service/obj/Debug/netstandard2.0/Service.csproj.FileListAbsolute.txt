@@ -1,0 +1,3 @@
+D:\Learn\Tailor\Native\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+D:\Learn\Tailor\Native\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+D:\Learn\Tailor\Native\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs

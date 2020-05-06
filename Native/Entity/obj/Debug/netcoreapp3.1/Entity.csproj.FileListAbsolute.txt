@@ -1,0 +1,7 @@
+D:\Learn\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+D:\Learn\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+D:\Learn\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
