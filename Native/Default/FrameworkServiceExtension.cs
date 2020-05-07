@@ -72,10 +72,14 @@ namespace Default
             var currentNamespace = MethodBase.GetCurrentMethod().DeclaringType.Namespace;
             var currentAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{currentNamespace}.dll").FirstOrDefault();
 
+            StackTrace ss = new StackTrace(true);
+            MethodBase mb = ss.GetFrame(ss.FrameCount - 1).GetMethod();
+
+            var userNamespace = mb.DeclaringType.Namespace;
+
             services.AddMvc(options =>
             {
                 options.EnableEndpointRouting = false;
-                options.Conventions.Add(new ApiControllerVersionConvention());
             });
 
             services.AddRazorPages()
@@ -108,6 +112,11 @@ namespace Default
             });
             services.AddSingleton<ILoginUserService, LoginUserService>();
 
+            services.AddMvc(options =>
+            {
+                options.Conventions.Add(new ApiControllerVersionConvention(currentNamespace, userNamespace));
+            });
+
             services.AddApiVersioning(o => {
                 o.ReportApiVersions = true;
                 //o.ApiVersionReader = new UrlSegmentApiVersionReader();
@@ -115,7 +124,8 @@ namespace Default
                 //o.ApiVersionReader = ApiVersionReader.Combine(new QueryStringApiVersionReader("api-version"));
                 o.ApiVersionReader = ApiVersionReader.Combine(new HeaderApiVersionReader("api-version"));
                 o.AssumeDefaultVersionWhenUnspecified = true;
-                o.DefaultApiVersion = ApiVersion.Default;
+                o.DefaultApiVersion = new ApiVersion(1, 0);
+                o.ApiVersionSelector = new CurrentImplementationApiVersionSelector(o);
             });
 
             return services;

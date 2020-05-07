@@ -26,7 +26,7 @@ namespace Default
 
         public async Task Invoke(HttpContext context)
         {
-            context.Request.Headers.Add("api-version", AppSettingProvider._appSettings.ApiVersion);
+            //context.Request.Headers.Add("api-version", AppSettingProvider._appSettings.ApiVersion);
 
             if (string.IsNullOrWhiteSpace(context.Request.Path.Value.Replace("/","").Replace("\\", "")))
             {

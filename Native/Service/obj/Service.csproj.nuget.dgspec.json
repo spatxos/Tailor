@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learn\\Tailor\\Native\\Service\\Service.csproj": {}
+    "D:\\Tailor\\Tailor\\Native\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\Learn\\Tailor\\Native\\Entity\\Entity.csproj": {
+    "D:\\Tailor\\Tailor\\Native\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learn\\Tailor\\Native\\Entity\\Entity.csproj",
+        "projectUniqueName": "D:\\Tailor\\Tailor\\Native\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "D:\\Learn\\Tailor\\Native\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-        "outputPath": "D:\\Learn\\Tailor\\Native\\Entity\\obj\\",
+        "projectPath": "D:\\Tailor\\Tailor\\Native\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+        "outputPath": "D:\\Tailor\\Tailor\\Native\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,17 +62,17 @@
         }
       }
     },
-    "D:\\Learn\\Tailor\\Native\\Service\\Service.csproj": {
+    "D:\\Tailor\\Tailor\\Native\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learn\\Tailor\\Native\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\Tailor\\Tailor\\Native\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\Learn\\Tailor\\Native\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-        "outputPath": "D:\\Learn\\Tailor\\Native\\Service\\obj\\",
+        "projectPath": "D:\\Tailor\\Tailor\\Native\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+        "outputPath": "D:\\Tailor\\Tailor\\Native\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Learn\\Tailor\\Native\\Entity\\Entity.csproj": {
-                "projectPath": "D:\\Learn\\Tailor\\Native\\Entity\\Entity.csproj"
+              "D:\\Tailor\\Tailor\\Native\\Entity\\Entity.csproj": {
+                "projectPath": "D:\\Tailor\\Tailor\\Native\\Entity\\Entity.csproj"
               }
             }
           }

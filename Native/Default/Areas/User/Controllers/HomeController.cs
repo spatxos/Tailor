@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 namespace Default.Areas.User.Controllers
 {
     [Area("User")]
+    [ApiVersion("1.0")]
     [Route("[area]/[controller]/[action]")]
     [ApiController]
     public class HomeController : Controller, IBaseController

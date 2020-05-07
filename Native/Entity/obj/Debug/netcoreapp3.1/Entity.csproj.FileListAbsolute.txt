@@ -5,3 +5,10 @@ D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.
 D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
 D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.dll
 D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+D:\Tailor\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+D:\Tailor\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+D:\Tailor\Tailor\Native\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

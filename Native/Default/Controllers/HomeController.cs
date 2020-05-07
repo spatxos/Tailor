@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Default.Controllers
 {
+    [ApiVersion("1.0")]
     [Route("[controller]/[action]")]
     [ApiController]
     public class HomeController : Controller, IBaseController

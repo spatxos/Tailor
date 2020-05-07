@@ -783,19 +783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wangp\\.nuget\\packages\\": {}
+    "C:\\Users\\root\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learn\\Tailor\\Tailor.Custom3.Https\\Tailor.Custom3.Https.csproj",
+      "projectUniqueName": "D:\\Tailor\\Tailor\\Tailor.Custom3.Https\\Tailor.Custom3.Https.csproj",
       "projectName": "Tailor.Custom3.Https",
-      "projectPath": "D:\\Learn\\Tailor\\Tailor.Custom3.Https\\Tailor.Custom3.Https.csproj",
-      "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-      "outputPath": "D:\\Learn\\Tailor\\Tailor.Custom3.Https\\obj\\",
+      "projectPath": "D:\\Tailor\\Tailor\\Tailor.Custom3.Https\\Tailor.Custom3.Https.csproj",
+      "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+      "outputPath": "D:\\Tailor\\Tailor\\Tailor.Custom3.Https\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -808,8 +808,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Learn\\Tailor\\Native\\Default\\Default.csproj": {
-              "projectPath": "D:\\Learn\\Tailor\\Native\\Default\\Default.csproj"
+            "D:\\Tailor\\Tailor\\Native\\Default\\Default.csproj": {
+              "projectPath": "D:\\Tailor\\Tailor\\Native\\Default\\Default.csproj"
             }
           }
         }

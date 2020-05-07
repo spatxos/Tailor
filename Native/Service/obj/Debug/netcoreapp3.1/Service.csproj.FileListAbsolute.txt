@@ -9,3 +9,14 @@ D:\Learn\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
 D:\Learn\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
 D:\Learn\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.dll
 D:\Learn\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.pdb
+D:\Tailor\Tailor\Native\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+D:\Tailor\Tailor\Native\Service\bin\Debug\netcoreapp3.1\Service.dll
+D:\Tailor\Tailor\Native\Service\bin\Debug\netcoreapp3.1\Service.pdb
+D:\Tailor\Tailor\Native\Service\bin\Debug\netcoreapp3.1\Entity.dll
+D:\Tailor\Tailor\Native\Service\bin\Debug\netcoreapp3.1\Entity.pdb
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.dll
+D:\Tailor\Tailor\Native\Service\obj\Debug\netcoreapp3.1\Service.pdb

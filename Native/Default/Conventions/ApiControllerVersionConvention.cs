@@ -12,27 +12,39 @@ namespace Default.Conventions
 {
     public class ApiControllerVersionConvention : IControllerModelConvention
     {
+        public readonly string _currentNamespace;
+        public readonly string _userNamespace;
+        public ApiControllerVersionConvention(string currentNamespace, string userNamespace)
+        {
+            _currentNamespace = currentNamespace;
+            _userNamespace = userNamespace;
+        }
         public void Apply(ControllerModel controller)
         {
             var gd = AssemblyHelper.GetGlobalData();
 
-            var currentNamespace = MethodBase.GetCurrentMethod().DeclaringType.Namespace.Replace(".Conventions", "");
-            var currentAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{currentNamespace}.dll").FirstOrDefault();
+            var currentAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{_currentNamespace}.dll").FirstOrDefault();
 
-            StackTrace ss = new StackTrace(true);
-            MethodBase mb = ss.GetFrame(ss.FrameCount - 1).GetMethod();
-
-            var userNamespace = mb.DeclaringType.Namespace;
-            var userAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{mb.DeclaringType.Namespace}.dll").FirstOrDefault();
+            var userAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{_userNamespace}.dll").FirstOrDefault();
 
             var current_controllers = AssemblyHelper.GetControllers(currentAssembly);
             var user_controllers = AssemblyHelper.GetControllers(userAssembly);
-            if (current_controllers.Where(o => controller.ControllerType.FullName.Replace(currentNamespace, "") == o.FullName.Replace(currentNamespace, "")).Any() && user_controllers.Where(o => controller.ControllerType.FullName.Replace(currentNamespace, "") == o.FullName.Replace(userNamespace, "")).Any() && !controller.ControllerType.FullName.Contains(userNamespace))
+            if (current_controllers.Where(o => controller.ControllerType.FullName == o.FullName).Any())
             {
-                if (controller.Attributes is List<object>
-                    attributes)
+                if (user_controllers.Where(o => controller.ControllerType.FullName.Replace(_currentNamespace, "") == o.FullName.Replace(_userNamespace, "")).Any())
                 {
-                    attributes.Add(new ApiVersionAttribute("1.0"));
+                    if (controller.Attributes is List<object>
+                        attributes)
+                    {
+                        attributes.Add(new ApiVersionAttribute("1.0"));
+                    }
+                }
+                else
+                {
+                    if (controller.Attributes is List<object> attributes)
+                    {
+                        attributes.Add(new ApiVersionAttribute("2.0"));
+                    }
                 }
             }
             else
