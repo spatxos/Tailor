@@ -13,3 +13,4 @@ D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
 D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.dll
 D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
 D:\Tailor\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+D:\Learn\Tailor\Native\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache

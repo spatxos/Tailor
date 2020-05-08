@@ -65,27 +65,29 @@ namespace Default
 
             var config = configBuilder.Build();
 
-            new AppSettingProvider().Initial(config);
+            new AppSettingProvider().Initial(config);//添加静态的配置全局配置文件
 
             var gd = AssemblyHelper.GetGlobalData();
 
             var currentNamespace = MethodBase.GetCurrentMethod().DeclaringType.Namespace;
+            //获取标准类库的Assembly
             var currentAssembly = gd.AllAssembly.Where(x => x.ManifestModule.Name == $"{currentNamespace}.dll").FirstOrDefault();
 
             StackTrace ss = new StackTrace(true);
             MethodBase mb = ss.GetFrame(ss.FrameCount - 1).GetMethod();
 
-            var userNamespace = mb.DeclaringType.Namespace;
+            var userNamespace = mb.DeclaringType.Namespace;//调用标准版项目的定制版项目命名空间
 
             services.AddMvc(options =>
             {
                 options.EnableEndpointRouting = false;
             });
 
-            services.AddRazorPages()
+            services.AddRazorPages()//添加RazorPages
                 .AddRazorRuntimeCompilation()
             .ConfigureApplicationPartManager(m =>
             {
+                //将标准类库的Controllers添加到定制版，即我们要运行的网站中
                 var feature = new ControllerFeature();
 
                 if (currentAssembly != null)
@@ -96,36 +98,36 @@ namespace Default
                 services.AddSingleton(feature.Controllers.Select(t => t.AsType()).ToArray());
             })
             .AddControllersAsServices()
-            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);//添加多语言支持
 
-            services.Configure<MvcRazorRuntimeCompilationOptions>(options =>
-            {
-                if (currentAssembly != null)
-                {
-                    options.FileProviders.Add(
-                    new EmbeddedFileProvider(
-                        currentAssembly,
-                        currentNamespace // your external assembly's base namespace
-                    )
-                );
-                }
-            });
-            services.AddSingleton<ILoginUserService, LoginUserService>();
-
-            //services.AddMvc(options =>
+            //services.Configure<MvcRazorRuntimeCompilationOptions>(options =>
             //{
-            //    options.Conventions.Add(new ApiControllerVersionConvention(currentNamespace, userNamespace));
+            //    if (currentAssembly != null)
+            //    {
+            //        options.FileProviders.Add(
+            //        new EmbeddedFileProvider(
+            //            currentAssembly,
+            //            currentNamespace // your external assembly's base namespace
+            //        )
+            //    );
+            //    }
             //});
+            services.AddSingleton<ILoginUserService, LoginUserService>();//添加需要引用的其他服务
+
+            services.AddMvc(options =>
+            {
+                options.Conventions.Add(new ApiControllerVersionConvention());//添加版本控制时忽略添加的某些重要属性
+            });
 
             services.AddApiVersioning(o => {
-                o.ReportApiVersions = true;
+                o.ReportApiVersions = true;//返回版本可使用的版本
                 //o.ApiVersionReader = new UrlSegmentApiVersionReader();
                 //o.ApiVersionReader = ApiVersionReader.Combine(new HeaderApiVersionReader("api-version"), new QueryStringApiVersionReader("api-version"));
                 //o.ApiVersionReader = ApiVersionReader.Combine(new QueryStringApiVersionReader("api-version"));
-                o.ApiVersionReader = ApiVersionReader.Combine(new HeaderApiVersionReader("api-version"));
+                o.ApiVersionReader = ApiVersionReader.Combine(new HeaderApiVersionReader("api-version"));//版本号以什么形式，什么字段传递
                 o.AssumeDefaultVersionWhenUnspecified = true;
-                o.DefaultApiVersion = new ApiVersion(1, 0);
-                o.ApiVersionSelector = new CurrentImplementationApiVersionSelector(o);
+                o.DefaultApiVersion = new ApiVersion(1, 0);//默认版本号
+                o.ApiVersionSelector = new CurrentImplementationApiVersionSelector(o);//默认以当前最高版本进行访问
             });
 
             return services;
