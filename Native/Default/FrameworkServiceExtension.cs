@@ -112,10 +112,10 @@ namespace Default
             });
             services.AddSingleton<ILoginUserService, LoginUserService>();
 
-            services.AddMvc(options =>
-            {
-                options.Conventions.Add(new ApiControllerVersionConvention(currentNamespace, userNamespace));
-            });
+            //services.AddMvc(options =>
+            //{
+            //    options.Conventions.Add(new ApiControllerVersionConvention(currentNamespace, userNamespace));
+            //});
 
             services.AddApiVersioning(o => {
                 o.ReportApiVersions = true;
