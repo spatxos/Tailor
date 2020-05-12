@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+  <VersionPrefix>4.1.1</VersionPrefix>
+  <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  <TargetFramework>netcoreapp3.1</TargetFramework>
+  <AssemblyTitle>Microsoft ASP.NET Core API Versioning</AssemblyTitle>
+  <Description>A service API versioning library for Microsoft ASP.NET Core.</Description>
+  <RootNamespace>Microsoft.AspNetCore.Mvc</RootNamespace>
+  <PackageTags>Microsoft;AspNet;AspNetCore;Versioning</PackageTags>
+ </PropertyGroup>
+
+ <ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+ </ItemGroup>
+
+ <Import Project="..\Common\Common.projitems" Label="Shared" />
+ <Import Project="..\Shared\Shared.projitems" Label="Shared" />
+
+</Project>

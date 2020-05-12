@@ -21,9 +21,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tailor.Custom2.Https", "Tai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{76CD6ECF-7209-4EA2-A7D0-52CBAC7BC376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ApiVersioning", "Test\Test.ApiVersioning\Test.ApiVersioning.csproj", "{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.ApiVersioning", "Test\Test.ApiVersioning\Test.ApiVersioning.csproj", "{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Mvc.Versioning", "Native\Microsoft.AspNetCore.Mvc.Versioning\Microsoft.AspNetCore.Mvc.Versioning.csproj", "{5236F6C1-42F4-4B41-A127-3236546F1E55}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Native\Common\Common.shproj", "{6D0E834B-6422-44CD-9A85-E3BE9DEAD1BE}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Native\Common\Common.projitems*{6d0e834b-6422-44cd-9a85-e3be9dead1be}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -61,6 +68,10 @@ Global
 		{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5236F6C1-42F4-4B41-A127-3236546F1E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5236F6C1-42F4-4B41-A127-3236546F1E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5236F6C1-42F4-4B41-A127-3236546F1E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5236F6C1-42F4-4B41-A127-3236546F1E55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +81,8 @@ Global
 		{52C6FA37-8D5A-4F27-8F06-B1EC81A8C139} = {F91F7B6E-3689-4683-B6E7-818A8AC8895A}
 		{6E697F85-4789-4F2F-91B0-DBEE8EDBA1DA} = {F91F7B6E-3689-4683-B6E7-818A8AC8895A}
 		{AF934CF0-F73D-4FF5-AC7B-4BA9705A74F6} = {76CD6ECF-7209-4EA2-A7D0-52CBAC7BC376}
+		{5236F6C1-42F4-4B41-A127-3236546F1E55} = {F91F7B6E-3689-4683-B6E7-818A8AC8895A}
+		{6D0E834B-6422-44CD-9A85-E3BE9DEAD1BE} = {F91F7B6E-3689-4683-B6E7-818A8AC8895A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CAE88D75-060A-4560-AB96-48FA33B39C76}

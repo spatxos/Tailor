@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learn\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {}
+    "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {}
   },
   "projects": {
-    "D:\\Learn\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {
+    "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learn\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
+        "projectUniqueName": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
         "projectName": "Test.ApiVersioning",
-        "projectPath": "D:\\Learn\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
-        "packagesPath": "C:\\Users\\wangp\\.nuget\\packages\\",
-        "outputPath": "D:\\Learn\\Tailor\\Test\\Test.ApiVersioning\\obj\\",
+        "projectPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
+        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+        "outputPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wangp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

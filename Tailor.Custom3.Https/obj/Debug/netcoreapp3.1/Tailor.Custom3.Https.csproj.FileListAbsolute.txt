@@ -726,3 +726,5 @@ D:\Tailor\Tailor\Tailor.Custom3.Https\obj\Debug\netcoreapp3.1\Tailor.Custom3.Htt
 D:\Tailor\Tailor\Tailor.Custom3.Https\obj\Debug\netcoreapp3.1\Tailor.Custom3.Https.csproj.CopyComplete
 D:\Tailor\Tailor\Tailor.Custom3.Https\obj\Debug\netcoreapp3.1\Tailor.Custom3.Https.dll
 D:\Tailor\Tailor\Tailor.Custom3.Https\obj\Debug\netcoreapp3.1\Tailor.Custom3.Https.pdb
+D:\Tailor\Tailor\Tailor.Custom3.Https\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.pdb
+D:\Tailor\Tailor\Tailor.Custom3.Https\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.xml
