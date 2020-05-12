@@ -269,6 +269,9 @@
             "projectReferences": {
               "D:\\Tailor\\Tailor\\Native\\Default\\Default.csproj": {
                 "projectPath": "D:\\Tailor\\Tailor\\Native\\Default\\Default.csproj"
+              },
+              "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj": {
+                "projectPath": "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj"
               }
             }
           }

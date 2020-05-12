@@ -4,14 +4,14 @@
     "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {}
   },
   "projects": {
-    "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {
-      "version": "1.0.0",
+    "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj": {
+      "version": "4.1.1",
       "restore": {
-        "projectUniqueName": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
-        "projectName": "Test.ApiVersioning",
-        "projectPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
+        "projectUniqueName": "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj",
+        "projectName": "Microsoft.AspNetCore.Mvc.Versioning",
+        "projectPath": "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj",
         "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-        "outputPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\obj\\",
+        "outputPath": "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,11 +37,66 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Versioning": {
-              "target": "Package",
-              "version": "[4.1.1, )"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
+        "projectName": "Test.ApiVersioning",
+        "projectPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\Test.ApiVersioning.csproj",
+        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+        "outputPath": "D:\\Tailor\\Tailor\\Test\\Test.ApiVersioning\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj": {
+                "projectPath": "D:\\Tailor\\Tailor\\Native\\Microsoft.AspNetCore.Mvc.Versioning\\Microsoft.AspNetCore.Mvc.Versioning.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.2, )"

@@ -25,6 +25,7 @@
       "Tailor.Custom3.Https/1.0.0": {
         "dependencies": {
           "Default": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.1.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",

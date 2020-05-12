@@ -218,3 +218,5 @@ D:\Learn\Tailor\Test\Test.ApiVersioning\obj\Debug\netcoreapp3.1\Test.ApiVersioni
 D:\Learn\Tailor\Test\Test.ApiVersioning\obj\Debug\netcoreapp3.1\Test.ApiVersioning.csproj.CopyComplete
 D:\Learn\Tailor\Test\Test.ApiVersioning\obj\Debug\netcoreapp3.1\Test.ApiVersioning.dll
 D:\Learn\Tailor\Test\Test.ApiVersioning\obj\Debug\netcoreapp3.1\Test.ApiVersioning.pdb
+D:\Tailor\Tailor\Test\Test.ApiVersioning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.pdb
+D:\Tailor\Tailor\Test\Test.ApiVersioning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.xml
